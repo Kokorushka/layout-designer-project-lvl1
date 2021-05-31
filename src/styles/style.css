@@ -1,17 +1,16 @@
 /** CSS STYLE **/
  @font-face {
-   font-family: Neucha;
-   /* Имя шрифта */
-   src: url(fonts/assets/Neucha-Regular.ttf);
-   /* Путь к файлу со шрифтом */
+   font-family: 'Neucha';
+   src: url('../../assets/fonts/Neucha/Neucha-Regular.ttf');
  }
  @font-face {
-   font-family: OpenSans;
-   src: url(fonts/assets/OpenSans-Regular);
+   font-family: 'OpenSans';
+   src: url('../../assets/fonts/Open_Sans/OpenSans-Regular.ttf');
  }
 :root {
   --white-color: #fff;
-  --transperent-white: #f5f4f0;
+  --transperent-white: #d7ccc0;
+  --ligth-color: #f5f4f0;
   --main-color: #fe8a02;
   --main-dark: #42413c;
   --dark-color: #2a2626;
@@ -21,16 +20,22 @@
   /* --caption-font: Neucha; */
 }
 
-* {
-  font-family: 'Open Sans', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
   font-size: 16px;
   line-height: 1.6em;
   color: var(--dark-color);
+  font-weight: 400;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
   line-height: 1.2em;
   font-family: 'Neucha';
+  text-align: center;
+  font-weight: normal;
 }
 h1 {
   font-size: 72px;
@@ -42,10 +47,154 @@ h2 {
 
 h3 {
   font-size: 34px;
+  margin-top: 0;
 }
 
-section {
+.container {
   width: 1110px;
+  height: 100%;
   text-align: center;
-  margin: 100px 0;
+  margin: 0 auto;
+  padding: 100px 0;
+  position: relative;
+  /* box-sizing: border-box; */
+}
+
+.bg-pattern {
+  position: relative;
+}
+
+.bg-pattern::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #f5f4f0;
+  background-image: url('../../assets/img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;
+}
+
+.text-orange {
+  color: var(--main-color);
+}
+
+header .container h1 {
+  text-align: left;
+  font-weight: normal;
+  z-index: 1;
+}
+.header-title {
+  display: flex;
+  position: relative;
+
+}
+.header-img {
+  /* overflow: hidden; */
+  /* position: relative;
+  width: 100%;
+  height: 100%; */
+    /* position: absolute;
+    height: 525px;
+    top: 55px;
+    right: -270px; */
+}
+
+.slide-image {
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  right: -270px;
+  /* left: 461px; */
+}
+
+.text-content {
+  display: flex;
+  text-align: left;
+  margin-top: 220px;
+  margin-bottom: 40px;
+}
+.text-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.text-left,
+.text-right {
+  width: 50%;
+}
+
+.text-content p {
+  margin-bottom: 0;
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-weight: bold;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.description {
+  margin-bottom: 30px;
+}
+.video_section {
+  margin-bottom: -200px;
+}
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+.navigation {
+  padding-top: 100px;
+  background-color: var(--main-dark);
+}
+
+/* .navigation .container {
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 100px; */
+/* } */ 
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 350px;
+  box-sizing: border-box;
+  background-color: var(--ligth-color);
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.card-item:first-child {
+  padding: 0;
+  /* margin: 0; */
+  background-color: var(--main-dark);
+  /* width: 31%; */
+}
+.card-item:nth-child(3),
+.card-item:nth-child(6) {
+  margin-right: 0;
+}
+.card-item h2 {
+  font-size: 52px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.num {
+  padding-bottom: 40px;
+  font-size: 64px;
+  font-family: 'Neucha';
+  line-height: 1;
+  text-align: left;
 }
