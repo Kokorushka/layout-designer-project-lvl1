@@ -105,9 +105,11 @@ header .container h1 {
   text-align: left;
   margin-bottom: 40px;
 }
+
 header .text-content {
 margin-top: 220px;
 }
+
 .simple-text {
   width: 49%;
 }
@@ -122,9 +124,11 @@ margin-top: 220px;
 .right-side-text {
   margin-bottom: 40px;
 }
+
 .btn:hover {
   background-color: var(--dark-orange);
 }
+
 .btn-more {
   background-color: var(--main-color);
   color: var(--white-color);
@@ -133,15 +137,19 @@ margin-top: 220px;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .description {
   margin-bottom: 30px;
 }
+
 #video_section {
   margin-bottom: -200px;
 }
+
 .video {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
+
 .navigation {
   padding-top: 100px;
   background-color: var(--main-dark);
@@ -152,6 +160,7 @@ margin-top: 220px;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .card-item {
   display: flex;
   flex-direction: column;
@@ -169,9 +178,11 @@ margin-top: 220px;
   background-color: var(--main-color);
   color: var(--white-color);
 }
+
 .card-item:hover h3 {
   color: var(--white-color);
 }
+
 .card-item:first-child {
   padding: 0;
   background-color: var(--main-dark);
