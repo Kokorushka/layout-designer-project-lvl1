@@ -64,6 +64,7 @@ h3 {
 .bg-pattern {
   position: relative;
   overflow-x: hidden;
+  background-color: #f5f4f0;
 }
 
 .bg-pattern::before {
@@ -74,10 +75,12 @@ h3 {
   height: 100%;
   top: 0;
   right: 0;
+  left: 0;
+  bottom: 0;
   background-color: #f5f4f0;
-  background-image: url('../assets/img/background.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url('../assets/img/background.png') no-repeat center / contain;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
   opacity: 90%;
 }
 
