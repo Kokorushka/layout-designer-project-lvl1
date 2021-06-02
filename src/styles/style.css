@@ -1,11 +1,11 @@
 /** CSS STYLE **/
  @font-face {
    font-family: 'Neucha';
-   src: url('../../assets/fonts/Neucha/Neucha-Regular.ttf');
+   src: url('../assets/fonts/Neucha/Neucha-Regular.ttf');
  }
  @font-face {
    font-family: 'OpenSans';
-   src: url('../../assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+   src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf');
  }
 :root {
   --white-color: #fff;
@@ -72,7 +72,7 @@ h3 {
   top: 0;
   right: 0;
   background-color: #f5f4f0;
-  background-image: url('../../assets/img/background.png');
+  background-image: url('../assets/img/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 90%;
@@ -316,7 +316,7 @@ button {
   height: 20px;
   top: 195px;
   right: 80px;
-  background-image: url('../../assets/img/send.svg');
+  background-image: url('../assets/img/send.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
