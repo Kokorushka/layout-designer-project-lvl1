@@ -61,6 +61,7 @@ h3 {
 
 .bg-pattern {
   position: relative;
+  overflow-x: hidden;
 }
 
 .bg-pattern::before {
@@ -209,7 +210,7 @@ margin-top: 220px;
   display: flex;
 }
 .image {
-  width: 45%;
+  width: 52%;
   margin-right: 30px;
 }
 .section-title {
