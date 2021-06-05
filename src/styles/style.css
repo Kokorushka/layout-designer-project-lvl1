@@ -151,7 +151,7 @@ margin-top: 195px;
 }
 
 #video_section {
-  margin-bottom: -200px;
+  margin-bottom: -190px;
 }
 
 .video {
@@ -162,7 +162,7 @@ margin-top: 195px;
 .navigation {
   padding-top: 90px;
   background-color: var(--main-dark);
-  margin: 0 -15px;
+  /* margin: 0 -300px; */
 }
  
 .cards-container {
