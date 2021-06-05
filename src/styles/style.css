@@ -162,6 +162,7 @@ margin-top: 195px;
 .navigation {
   padding-top: 100px;
   background-color: var(--main-dark);
+  margin-top: 10px;
 }
  
 .cards-container {
